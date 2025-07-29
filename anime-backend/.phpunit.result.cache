@@ -1,0 +1,1 @@
+{"version":1,"defects":{"Tests\\Feature\\AzureStorageUploadIntegrationTest::test_real_file_upload_to_azure":7},"times":{"Tests\\Feature\\AzureStorageUploadTest::test_file_upload_to_azure_disk":0.03,"Tests\\Feature\\AzureStorageUploadIntegrationTest::test_real_file_upload_to_azure":0.117}}
