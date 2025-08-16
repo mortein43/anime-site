@@ -11,7 +11,7 @@ export default function Home() {
   const [genres, setGenres] = useState<Genre[]>([]);
 
   useEffect(() => {
-    fetch("http://localhost:8000/api/v1/genres")
+    fetch(`${process.env.NEXT_PUBLIC_API_URL}/v1/genres`)
       .then((res) => res.json())
       .then((data) => {
         setGenres(data.data);

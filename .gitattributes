@@ -1,0 +1,18 @@
+# Всі текстові файли
+* text=auto
+
+# Bash/Unix скрипти завжди у LF
+*.sh text eol=lf
+
+# JS/TS/TSX файли теж краще у LF (щоб не було різниці між Win/Linux)
+*.js text eol=lf
+*.ts text eol=lf
+*.tsx text eol=lf
+
+# PHP-файли (бекенд) також у LF
+*.php text eol=lf
+
+# Dockerfile та YAML у LF
+Dockerfile text eol=lf
+*.yml text eol=lf
+*.yaml text eol=lf
