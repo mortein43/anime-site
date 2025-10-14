@@ -2,7 +2,7 @@ import style from "./searchInput.module.css";
 
 export default function SearchInput() {
   return (
-    <div className="relative h-[36px] sm:h-[40px] lg:h-[50px]">
+    <div className="relative h-[36px] sm:h-[40px] lg:h-[50px] max-w-[280px] xl:max-w-[270px]">
       {/* Ліва іконка */}
       <span className="absolute left-[-30] top-1/2 -translate-y-1/2 pointer-events-none z-101">
         <svg
@@ -26,10 +26,10 @@ export default function SearchInput() {
         type="text"
         placeholder="Пошук"
         className="
-      absolute top-0 left-[-44] w-[36px] h-[36px] max-sm:transition-all max-sm:duration-500 max-sm:ease-in-out max-sm:focus:w-[310px] max-sm:z-[100]
+      absolute top-0 left-[-44] w-[36px] h-[36px] max-sm:transition-all max-sm:duration-500 max-sm:ease-in-out max-sm:focus:w-[285px] max-sm:z-[100]
       sm:relative sm:w-[300px] sm:h-[40px] sm:focus:w-[300px] sm:z-auto
       lg:h-[50px]
-      pl-12 sm:pl-16
+      pl-12 sm:pl-12
       border border-[var(--border-line-aqua)]
       rounded-[8px]
       bg-transparent focus:bg-[rgba(0,0,0,0.7)]
