@@ -44,9 +44,14 @@ services:
       - /app/node_modules
     environment:
       NEXT_PUBLIC_API_URL: http://localhost:8000/api
+      HOST: 0.0.0.0
+      CHOKIDAR_USEPOLLING: "true"
+      WATCHPACK_POLLING: "true"
+      NEXT_WEBPACK_USEPOLLING: "true"
     depends_on:
       - nginx
-    command: npm run dev
+    # ensure Next binds to 0.0.0.0 and receives the -H flag
+    command: ["npm", "run", "dev", "--", "-H", "0.0.0.0"]
 
   db:
     build:

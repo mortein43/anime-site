@@ -1,0 +1,17 @@
+.logo {
+  width: 48px;
+  height: auto;
+  display: block;
+}
+
+@media (min-width: 640px) {
+  .logo {
+    width: 60px;
+  }
+}
+
+@media (min-width: 1920px) {
+  .logo {
+    width: 100px;
+  }
+}
